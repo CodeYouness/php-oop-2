@@ -1,7 +1,8 @@
 <?php 
 require_once __DIR__ . "/db.php";
 
-var_dump($products)
+var_dump($products);
+
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +26,7 @@ var_dump($products)
         <h2>I nostri prodotti</h2>
 
         <div class="row">
-            <?php foreach ($products as $product) { ?>
+            <?php foreach ($products as $category => $product) { ?>
             <div class="col-4">
 
                 <div class="card mb-3">
@@ -33,12 +34,15 @@ var_dump($products)
                     <img src="<?php echo $product->getImgUrl()?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $product->getName()?></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="fw-6">Category: <?php echo $product->getCategory()->getCategory() ?></p>
+                        <p class="card-text"><?php echo $product->getPrice() ?> &euro;</p>
+
+                        <?php if($category === 'Food') { ?>
+                            <p><?php echo $product->get ?></p>
+                            <?php } ?>
+
                         <div class="text-center">
                             <a href="#" class="btn btn-primary">Add to basket</a>
-
                         </div>
                     </div>
                 </div>

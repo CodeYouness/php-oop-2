@@ -9,6 +9,15 @@ class Food extends Product{
         $this -> quality = $quality;
         $this -> meat = $meat;
     }
+
+    public function getQuality(){
+        return $this -> quality;
+    }
+
+    public function getMeat(){
+        return $this -> meat;
+    }
 }
+
 
 ?>
