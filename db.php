@@ -11,7 +11,10 @@ $categories = [
     "cat" => new Category("cat")
 ];
 
-$royalcanin = new Product("Royal canin", "20.99", "https://arcaplanet.vtexassets.com/arquivos/ids/300306/Royal-Canin-Mini-Adult-Alimento-Completo-per-Cani-Adulti-di-Piccola-Taglia-10120604-1.jpg", $categories["dog"]);
+$products = [ 
+    new Food("High", "Cow", "Royal Canin Mini Adult", "Royal Canin", 20.99, "https://arcaplanet.vtexassets.com/arquivos/ids/300306/Royal-Canin-Mini-Adult-Alimento-Completo-per-Cani-Adulti-di-Piccola-Taglia-10120604-1.jpg", $categories['dog']),
+    new Food("Low", "Chicken", "Almo Nature Holistic", "Almo Nature", 44.99, "https://arcaplanet.vtexassets.com/arquivos/ids/300514/Almo-Nature-Holistic-Maintenance-Medium-Large-Tonno-e-Riso-10118806.jpg", $categories["dog"])
+]
 
-var_dump($royalcanin);
+
 ?>
