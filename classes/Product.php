@@ -1,11 +1,11 @@
 <?php 
-
+require_once __DIR__ . "/Category.php";
 class Product {
     private $name;
     private $price;
     private $imgUrl;
 
-    public function __construct($name, $price, $imgUrl){
+    public function __construct($name, $price, $imgUrl, Category $category){
         $this -> name = $name;
         $this -> price = $price;
         $this -> imgUrl = $imgUrl;

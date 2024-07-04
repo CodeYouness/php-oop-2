@@ -1,7 +1,7 @@
 <?php 
 
 class Category {
-    public $category;
+    private $category;
 
     public function __construct($category){
         $this -> category = $category;
