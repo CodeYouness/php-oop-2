@@ -9,5 +9,13 @@ class Toy extends Product{
         $this -> material = $material;
         $this -> weight = $weight;
     }
+
+    public function getMaterial(){
+        return $this -> material;
+    }
+
+    public function getWeight(){
+        return $this -> weight;
+    }
 }
 ?>

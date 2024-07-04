@@ -37,9 +37,17 @@ var_dump($products);
                         <p class="fw-6">Category: <?php echo $product->getCategory()->getCategory() ?></p>
                         <p class="card-text"><?php echo $product->getPrice() ?> &euro;</p>
 
-                        <?php if($category === 'Food') { ?>
-                            <p><?php echo $product->get ?></p>
-                            <?php } ?>
+                        <?php if(get_class($product) === 'Food') { ?>
+                        <p>Quality: <?php echo $product->getQuality() ?></p>
+                        <p>Type of meat: <?php echo $product->getMeat() ?></p>
+
+                        <?php }elseif (get_class($product) === 'Toy') { ?>
+                        <p>Material: <?php echo $product->getMaterial() ?></p>
+                        <p>Weigth: <?php echo $product->getWeight() ?> g</p>
+                        <?php }elseif (get_class($product) === 'Accessories'){ ?>
+                        <p>Material: <?php echo $product->getMaterial() ?></p>
+                        <p>Weigth: <?php echo $product->getHeight() ?> kg</p>
+                        <?php } ?>
 
                         <div class="text-center">
                             <a href="#" class="btn btn-primary">Add to basket</a>

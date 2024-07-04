@@ -9,5 +9,13 @@ class Accessories extends Product{
         $this -> material = $material;
         $this -> height = $height;
     }
+
+    public function getMaterial(){
+        return $this -> material;
+    }
+
+    public function getHeight(){
+        return $this -> height;
+    }
 }
 ?>
