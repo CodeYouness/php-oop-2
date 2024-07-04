@@ -18,7 +18,8 @@ $products = [
     new Food("High", "mini flakes", "Mangime per pesci guppy in fiocchi", "Guppy", "2.95", "https://arcaplanet.vtexassets.com/arquivos/ids/272714/tetra-guppy-mini-flakes.jpg", $categories["fish"]),
     new Accessories("Wood", 1, "Voliera wilma in legno", "Wilma", 184.99, "https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg", $categories["fish"]),
     new Accessories("plutonium", 0.15, "cartucce filtranti per filtro", "EasyCrystal", 2.29, "https://arcaplanet.vtexassets.com/arquivos/ids/272741/tetra-easycrystal-filterpack-250-300.jpg", $categories["fish"]),
-    new Toy()
+    new Toy("Plastic", 100, "kong classic", "kong", 13.49, "https://arcaplanet.vtexassets.com/arquivos/ids/256599/kong-classic1.jpg", $categories["dog"]),
+    new Toy("Wool", 300, "Topini di peluche", "Trixie", 4.99, "https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg", $categories["cat"])
 ]
 
 
