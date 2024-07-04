@@ -6,7 +6,7 @@ class Product {
     private $brand;
     private $imgUrl;
 
-    public function __construct($name, $price, $brand, $imgUrl, Category $category){
+    public function __construct($name, $brand, $price, $imgUrl, Category $category){
         $this -> name = $name;
         $this -> price = $price;
         $this -> imgUrl = $imgUrl;
@@ -18,6 +18,14 @@ class Product {
 
     public function getPrice(){
         return $this -> price;
+    }
+
+    public function getBrand(){
+        return $this -> brand;
+    }
+
+    public function getImgUrl(){
+        return $this -> imgUrl;
     }
 }
 
